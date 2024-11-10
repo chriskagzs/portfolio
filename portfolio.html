@@ -8,9 +8,38 @@
                 color: aliceblue;
                 border: ;
             }
+            header{
+                position: fixed;
+                background-color: #2e86c1;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding-bottom: 5px;
+                
+                
+            }
+            .navigation{
+                margin-top: 10px;
+                
+            }
+            .navigation li{
+                
+                display: inline;
+                position: sticky;
+                
+            }
+            .navigation li a{
+                text-decoration: none;
+                padding: 120px;
+                color: aliceblue;
+                position: sticky;
+                text-align: center;
+                
+            }
+
             .container {
                 display: flex;
-                
+                justify-content: center;
                 height: 100vh;
             }
             .same-margin {
@@ -18,12 +47,12 @@
 
             }
             .div-1{
-                width: 50%;
+                width: 60%;
                 text-align: justify;
                 padding: 0px 30px 0px 30px;
             }
             .div-1 p{
-                text-align: justify;
+                
                 color: gray;
                 font-size: 14px;
             }
@@ -32,16 +61,120 @@
                 display: flex;
                 justify-content: center;
             }
-            .div-2{
-
+            .div-1 img{
+                border-radius: 8px;
             }
             span{
-                color: blue;
+                color: #2e86c1;
+                font-weight: bolder;
             }
-        </style>
+            
+            #skills{
+                text-align: center;
+            }
+            .skills-container{
+                display: flex;
+                justify-content: center;
+                
+            
+            }
+            .skill-card{
+                background-color: aliceblue;
+                color: black;
+                width: 30%;
+                margin: auto 20px;
+                border-radius: 8px;
+            }
+            #work-section{
+                text-align: center;
+            }
+            .work-container{
+                display: flex;
+                justify-content: center; 
+                color: gray;
+                height: 80vh;
+                
+
+            }
+            .work-content{
+                border: 1px solid gray;
+                width: 24%;
+                margin: auto 30px;
+                color: gray;
+                border-radius: 8px;
+
+            }
+            .work-content img{
+                border-radius: 8px;
+            }
+            .work-content p{
+                padding: 30px 15px 10px 7px;
+                font-size: 13px;
+                font-weight: lighter;
+                text-align: justify;
+            }
+            .work-content button{
+                color: grey;
+                background-color: black;
+                margin: 7px 0pxs;
+                border: 5px solid grey;
+                padding: ;
+                border: none;
+            }
+            #testimonial-section{
+                text-align: center;
+            }
+            .test-container{
+                display: flex;
+                justify-content: center;
+                height: 80vh;
+            }
+            .test-content{
+                width: 50%;
+                margin: auto;
+
+            }
+            .test-words{
+                text-align: justify;
+                padding: 0px 15px;
+                margin-left: 30px;
+            }
+            .test-words p{
+                color: grey;
+                padding: 5px 0px;
+            }
+            .test-words button{
+                border: none;
+                border-radius: 5px;
+                padding: 13px 18px;
+                font-size: 15px;
+                font-weight: bolder;
+                color: aliceblue;
+                background-color: #2e86c1;
+                cursor: pointer;
+            }
+            .test-img img{
+                border-radius: 50%;
+            }
+            footer{
+                text-align: center;
+                background-color: aliceblue;
+                color: black;
+            }
+        </style> 
     </head>
     <body>
-        <section>
+        <header>
+            <div class="navigation">
+                <nav>
+                    <li ><a href="#Home-section">Home</a></li>
+                    <li><a href="#skills">Specialised</a></li>
+                    <li><a href="#work-section">Work</a></li>
+                    <li><a href="#testimonial-section">Testimonials</a></li>
+                </nav>
+            </div>
+        </header>
+        <section id="Home-section">
             <div class="container">
                 <div class="same-margin div-1">
                     <h2>KARAMAGA <span>Chris</span></h2>
@@ -50,12 +183,92 @@
                         Also studying coding aside.
 
                     </p>
+                    <button>Read more ></button>
                 </div>
                 <div class="same-margin div-2">
-                    <img src="./male member.avif" width="200" height="250" alt="My picture">
+                    <img src="./male member.avif" width="280" height="220" alt="My picture">
                 </div>
             </div>
         </section>
+        <section id="skills">
+            <h1>Specialised In</h1>
+            <div class="skills-container">
+                <div class="skill-card skill-1">
+                    <h2>skill-1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio omnis perspiciatis cumque non? Consequuntur dolores voluptatum, architecto quisquam eveniet itaque? Suscipit, aperiam sint aliquid nostrum facere praesentium quaerat saepe!
+
+                    </p>
+                
+                </div>
+                <div class=" skill-card skill-2">
+                    <h2>skill-2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio omnis perspiciatis cumque non? Consequuntur dolores voluptatum, architecto quisquam eveniet itaque? Suscipit, aperiam sint aliquid nostrum facere praesentium quaerat saepe!
+
+                    </p>
+                </div>
+                <div class="skill-card skill-3">
+                    <h2>skill-3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio omnis perspiciatis cumque non? Consequuntur dolores voluptatum, architecto quisquam eveniet itaque? Suscipit, aperiam sint aliquid nostrum facere praesentium quaerat saepe!
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="work-section">
+            <h1>Worked On</h2>
+            <div class="work-container">
+                <div class=" work-content work-1">
+                    <img src="./women coding.avif" alt="work-1" width="300" height="220">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Perferendis inventore architecto incidunt 
+                        
+
+                    </p>
+                    <button>continue reading</button>
+                </div>
+                <div class="work-content work-2">
+                    <img src="./women coding.avif" alt="work-1" width="300" height="220">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, alias corporis.
+                         Dolore 
+
+                    </p>
+                    <button>continue reading</button>
+                </div>
+                <div class="work-content work-3">
+                    <img src="./women coding.avif" alt="work-1" width="300" height="220">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magnam vero corrupti amet nostrum? 
+
+                    </p>
+                    <button>continue reading</button>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial-section">
+            <h1>Testimonials</h1>
+            <div class="test-container">
+                <div class="test-content test-words"> 
+                    <h2>John Doe</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa maiores similique
+                         neque assumenda quo consectetur voluptatibus est ea quibusdam a id provident sequi 
+                         adipisci asperiores, voluptatem veritatis, nisi aperiam ducimus!
+
+                    </p>
+                    <button>Read more ></button>
+                </div>
+                <div class="test-content test-img">
+                    <img src="./female member.jpg" alt="testimonial-img" width="250" height="250">
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            &copy;2024 Karamaga Chris
+        </footer>
     </body>
 
 </html>
